@@ -1,0 +1,103 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Image",
+              "style": "Person",
+              "url": "https://avatars.slack-edge.com/2021-06-24/2233642559168_0ece5626019f23253940_512.png",
+              "size": "Medium",
+              "height": "50px"
+            }
+          ],
+          "width": "auto"
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "World Wide Sales - Center of Excellence",
+              "weight": "Lighter"
+            },
+            {
+              "type": "TextBlock",
+              "weight": "Bolder",
+              "text": "Engagement Request",
+              "wrap": true,
+              "size": "Large",
+              "spacing": "Small"
+            }
+          ],
+          "width": "stretch"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Artificial Intelligence",
+      "wrap": true,
+      "weight": "Default",
+      "size": "Medium"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Support Needed: (required)",
+      "wrap": true,
+      "separator": true,
+      "spacing": "Medium"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "choices": [
+        {
+          "title": "Pricing / licensing support",
+          "value": "Pricing / licensing support"
+        },
+        {
+          "title": "PM / GTM / TME Meeeting with customer",
+          "value": "PM / GTM / TME Meeeting with customer"
+        },
+        {
+          "title": "Roadmap information",
+          "value": "Roadmap information"
+        },
+        {
+          "title": "Security and Privacy information",
+          "value": "Security and Privacy information"
+        },
+        {
+          "title": "Trial request",
+          "value": "Trial request"
+        },
+        {
+          "title": "Competitive information",
+          "value": "Competitive information"
+        }
+      ],
+      "spacing": "None",
+      "value": "Pricing / licensing support",
+      "id": "support_needed"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Submit",
+          "id": "submit",
+          "data": {
+            "submit": "ai_submit"
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3"
+}

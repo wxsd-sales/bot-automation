@@ -1,0 +1,186 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "body": [
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Large"
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Medium"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Step 1:",
+              "wrap": true,
+              "horizontalAlignment": "Center",
+              "isSubtle": false,
+              "size": "Small"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Engagement Type",
+              "wrap": true,
+              "maxLines": 0,
+              "horizontalAlignment": "Center",
+              "isSubtle": false,
+              "size": "Small"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Step 2:",
+              "wrap": true,
+              "size": "Small",
+              "isSubtle": true,
+              "horizontalAlignment": "Center"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Select Responders",
+              "wrap": true,
+              "size": "Small",
+              "isSubtle": true,
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Step 3:",
+              "wrap": true,
+              "horizontalAlignment": "Center",
+              "size": "Small",
+              "isSubtle": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "Select Moderators",
+              "wrap": true,
+              "horizontalAlignment": "Center",
+              "size": "Small",
+              "isSubtle": true
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Step 4:",
+              "wrap": true,
+              "horizontalAlignment": "Center",
+              "size": "Small",
+              "isSubtle": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "Select Links",
+              "wrap": true,
+              "horizontalAlignment": "Center",
+              "size": "Small",
+              "isSubtle": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "Engagement Type Name",
+      "id": "team_name",
+      "isRequired": true,
+      "spacing": "Padding",
+      "separator": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "placeholder": "Team",
+      "isRequired": true,
+      "id": "team_id",
+      "wrap": true
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "Short Name",
+      "id": "short_name",
+      "isRequired": true
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "Placeholder text",
+      "id": "note1",
+      "isMultiline": true
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "Placeholder text",
+      "id": "note2",
+      "isMultiline": true
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Learn about the fields",
+          "card": {
+            "type": "AdaptiveCard",
+            "body": [
+              {
+                "type": "FactSet"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Cancel",
+          "data": {
+            "command": "delete"
+          },
+          "style": "destructive",
+          "associatedInputs": "none"
+        },
+        {
+          "type": "Action.Submit",
+          "title": "Next",
+          "data": {
+            "command": "team_add_step_1"
+          },
+          "style": "positive",
+          "associatedInputs": "auto"
+        }
+      ]
+    }
+  ]
+}

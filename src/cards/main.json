@@ -1,0 +1,326 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Image",
+              "style": "Person",
+              "url": "https://avatars.slack-edge.com/2021-06-24/2233642559168_0ece5626019f23253940_512.png",
+              "size": "Medium",
+              "height": "50px"
+            }
+          ],
+          "width": "auto"
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "World Wide Sales - Center of Excellence",
+              "weight": "Lighter"
+            },
+            {
+              "type": "TextBlock",
+              "weight": "Bolder",
+              "text": "Engagement Request",
+              "wrap": true,
+              "size": "Large",
+              "spacing": "Small"
+            }
+          ],
+          "width": "stretch"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Hi there! 👋🏽\nI can help you kick start an Engagement Request with the GCSE Center of Excellence. Please answer the short questionnaire below to get connected with the right personnel!",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Customer Name:  (required)",
+      "wrap": true,
+      "separator": true,
+      "spacing": "ExtraLarge"
+    },
+    {
+      "type": "Input.Text",
+      "id": "customer_name",
+      "spacing": "None"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Geography:",
+      "wrap": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "choices": [
+        {
+          "title": "Americas",
+          "value": "Americas"
+        },
+        {
+          "title": "EMEAR",
+          "value": "EMEAR"
+        },
+        {
+          "title": "APJC",
+          "value": "APJC"
+        },
+        {
+          "title": "Global",
+          "value": "Global"
+        }
+      ],
+      "spacing": "None",
+      "value": "Americas",
+      "id": "geography"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Sales Level 2:",
+      "wrap": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "choices": [
+        {
+          "title": "AMERICAS_MISC",
+          "value": "AMERICAS_MISC"
+        },
+        {
+          "title": "AMERICAS_SP",
+          "value": "AMERICAS_SP"
+        },
+        {
+          "title": "CANADA",
+          "value": "CANADA"
+        },
+        {
+          "title": "GLOBAL ENTERPRISE SEGMENT",
+          "value": "GLOBAL ENTERPRISE SEGMENT"
+        },
+        {
+          "title": "GSP_AMERICAS",
+          "value": "GSP_AMERICAS"
+        },
+        {
+          "title": "LATIN AMERICA",
+          "value": "LATIN AMERICA"
+        },
+        {
+          "title": "US COMMERCIAL",
+          "value": "US COMMERCIAL"
+        },
+        {
+          "title": "US OTHER",
+          "value": "US OTHER"
+        },
+        {
+          "title": "US PS Market Segment",
+          "value": "US PS Market Segment"
+        },
+        {
+          "title": "EMEAR_EE",
+          "value": "EMEAR_EE"
+        },
+        {
+          "title": "EMEAR_FRANCE",
+          "value": "EMEAR_FRANCE"
+        },
+        {
+          "title": "EMEAR_GERMANY",
+          "value": "EMEAR_GERMANY"
+        },
+        {
+          "title": "EMEAR_MEA",
+          "value": "EMEAR_MEA"
+        },
+        {
+          "title": "EMEAR_RCIS",
+          "value": "EMEAR_RCIS"
+        },
+        {
+          "title": "EMEAR_SP",
+          "value": "EMEAR_SP"
+        },
+        {
+          "title": "EMEAR_SWITZERLAND",
+          "value": "EMEAR_SWITZERLAND"
+        },
+        {
+          "title": "EMEAR-CENTRAL",
+          "value": "EMEAR-CENTRAL"
+        },
+        {
+          "title": "EMEAR-GSP",
+          "value": "EMEAR-GSP"
+        },
+        {
+          "title": "EMEAR-NORTH",
+          "value": "EMEAR-NORTH"
+        },
+        {
+          "title": "EMEAR-SOUTH",
+          "value": "EMEAR-SOUTH"
+        },
+        {
+          "title": "EMEAR-UKI",
+          "value": "EMEAR-UKI"
+        },
+        {
+          "title": "ANZ AREA",
+          "value": "ANZ AREA"
+        },
+        {
+          "title": "APJ_SP",
+          "value": "APJ_SP"
+        },
+        {
+          "title": "ASEAN_AREA",
+          "value": "ASEAN_AREA"
+        },
+        {
+          "title": "GREATER_CHINA",
+          "value": "GREATER_CHINA"
+        },
+        {
+          "title": "GSP APJ",
+          "value": "GSP APJ"
+        },
+        {
+          "title": "INDIA_AREA",
+          "value": "INDIA_AREA"
+        },
+        {
+          "title": "JAPAN",
+          "value": "JAPAN"
+        },
+        {
+          "title": "ROK_AREA",
+          "value": "ROK_AREA"
+        }
+      ],
+      "spacing": "None",
+      "value": "AMERICAS_MISC",
+      "id": "sales_level_2"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Sales Level 3:",
+      "wrap": true
+    },
+    {
+      "type": "Input.Text",
+      "spacing": "None",
+      "id": "sales_level_3"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Engagement Type:",
+      "wrap": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "placeholder": "--select--",
+      "spacing": "None",
+      "id": "engagement_type"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Additional Comments:",
+      "wrap": true
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "Please describe how we can assist. Providing additional data like opportunity size, subscription size, device count, competitive landscape etc would be extremely helpful.",
+      "isMultiline": true,
+      "spacing": "None",
+      "id": "comments"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Opportunity Link: (required)",
+      "wrap": true
+    },
+    {
+      "type": "Input.Text",
+      "spacing": "None",
+      "id": "opportunity_link"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Total Contract Value: (required)",
+      "wrap": true
+    },
+    {
+      "type": "Input.Text",
+      "spacing": "None",
+      "id": "tcv_value"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Submit",
+          "id": "submit",
+          "data": {
+            "submit": "main"
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Commands",
+          "card": {
+            "type": "AdaptiveCard",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "I can understand administrator specific commands like:",
+                "wrap": true
+              },
+              {
+                "type": "FactSet",
+                "facts": [
+                  {
+                    "title": "kill",
+                    "value": "To kill the engagement space"
+                  },
+                  {
+                    "title": "configure",
+                    "value": "For administrators to change the configuration values"
+                  },
+                  {
+                    "title": "assign",
+                    "value": "To assign a specific person to an engagement (only for WXSD team)"
+                  },
+                  {
+                    "title": "reassign",
+                    "value": "To reassign the space to a different team"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "isVisible": false
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3"
+}

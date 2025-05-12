@@ -1,0 +1,45 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Large"
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Add",
+          "data": {
+            "command": "add_conf"
+          }
+        },
+        {
+          "type": "Action.Submit",
+          "title": "Modify",
+          "data": {
+            "command": "modify_conf"
+          }
+        },
+        {
+          "type": "Action.Submit",
+          "title": "Remove",
+          "data": {
+            "command": "remove_conf"
+          }
+        }
+      ],
+      "horizontalAlignment": "Center"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "engagementBotDemo",
+  "version": "1.0.0",
+  "description": "Bot for demonstrating engagement bot features",
+  "type": "module",
+  "scripts": {
+    "start": "node -r dotenv-expand/config ./bin/www.js",
+    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+  },
+  "author": "Rajitha Kantheti",
+  "license": "MIT",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.1",
+    "dotenv-expand": "^10.0.0",
+    "express": "^4.18.2",
+    "mongodb": "^4.1.2",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.3",
+    "smartsheet": "^2.126.0",
+    "webex": "^2.60.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "2.7.1"
+  }
+}

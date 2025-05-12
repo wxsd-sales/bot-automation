@@ -1,0 +1,164 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Large"
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Medium"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Step 1:",
+              "wrap": true,
+              "horizontalAlignment": "Center",
+              "isSubtle": true,
+              "size": "Small"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Engagament Type",
+              "wrap": true,
+              "maxLines": 0,
+              "horizontalAlignment": "Center",
+              "isSubtle": true,
+              "size": "Small"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Step 2:",
+              "wrap": true,
+              "size": "Small",
+              "isSubtle": false,
+              "horizontalAlignment": "Center"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Select Responders",
+              "wrap": true,
+              "size": "Small",
+              "isSubtle": false,
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Step 3:",
+              "wrap": true,
+              "horizontalAlignment": "Center",
+              "size": "Small",
+              "isSubtle": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "Select Moderators",
+              "wrap": true,
+              "horizontalAlignment": "Center",
+              "size": "Small",
+              "isSubtle": true
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Step 4:",
+              "wrap": true,
+              "horizontalAlignment": "Center",
+              "size": "Small",
+              "isSubtle": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "Select Links",
+              "wrap": true,
+              "horizontalAlignment": "Center",
+              "size": "Small",
+              "isSubtle": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "placeholder": "Placeholder text",
+      "style": "expanded",
+      "isMultiSelect": true,
+      "id": "members",
+      "separator": true,
+      "isRequired": true,
+      "wrap": true
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Learn about default responders",
+          "card": {
+            "type": "AdaptiveCard",
+            "body": [
+              {
+                "type": "TextBlock",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Cancel",
+          "data": {
+            "command": "delete"
+          },
+          "style": "destructive",
+          "associatedInputs": "none"
+        },
+        {
+          "type": "Action.Submit",
+          "title": "Next",
+          "data": {
+            "command": "team_add_step_2"
+          },
+          "style": "positive",
+          "associatedInputs": "auto"
+        }
+      ]
+    }
+  ]
+}

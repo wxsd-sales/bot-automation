@@ -1,0 +1,44 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Large"
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Medium"
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "spacing": "Medium",
+      "separator": true
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Cancel",
+          "data": {
+            "command": "delete"
+          },
+          "style": "destructive",
+          "associatedInputs": "none"
+        }
+      ],
+      "spacing": "Medium"
+    }
+  ]
+}

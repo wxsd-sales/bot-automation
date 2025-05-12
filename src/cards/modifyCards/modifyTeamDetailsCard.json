@@ -1,0 +1,58 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Large"
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Medium"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "choices": [
+        {
+          "value": "modify_title"
+        },
+        {
+          "value": "modify_notes"
+        }
+      ],
+      "placeholder": "Placeholder text",
+      "value": "Add a link",
+      "id": "activity",
+      "style": "expanded",
+      "wrap": true
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Cancel",
+          "data": {
+            "command": "delete"
+          },
+          "style": "destructive",
+          "associatedInputs": "none"
+        },
+        {
+          "type": "Action.Submit",
+          "title": "Next",
+          "data": {
+            "command": "modify-link-step-1"
+          },
+          "style": "positive",
+          "associatedInputs": "auto"
+        }
+      ]
+    }
+  ]
+}

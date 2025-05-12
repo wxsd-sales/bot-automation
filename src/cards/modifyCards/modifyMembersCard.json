@@ -1,0 +1,61 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Large"
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Medium"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "choices": [
+        {
+          "value": "add_members"
+        },
+        {
+          "value": "remove_members"
+        },
+        {
+          "value": "update_members"
+        }
+      ],
+      "placeholder": "Placeholder text",
+      "value": "Add a team",
+      "id": "activity",
+      "style": "expanded",
+      "wrap": true
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Cancel",
+          "data": {
+            "command": "delete"
+          },
+          "style": "destructive",
+          "associatedInputs": "none"
+        },
+        {
+          "type": "Action.Submit",
+          "title": "Next",
+          "data": {
+            "command": "modify-step-1"
+          },
+          "style": "positive",
+          "associatedInputs": "auto"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Large"
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "size": "Medium"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Step 1:",
+              "wrap": true,
+              "horizontalAlignment": "Center",
+              "isSubtle": true,
+              "size": "Small"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Engagement Type",
+              "wrap": true,
+              "maxLines": 0,
+              "horizontalAlignment": "Center",
+              "isSubtle": true,
+              "size": "Small"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Step 2:",
+              "wrap": true,
+              "size": "Small",
+              "isSubtle": false,
+              "horizontalAlignment": "Center"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Review",
+              "wrap": true,
+              "size": "Small",
+              "isSubtle": false,
+              "horizontalAlignment": "Center"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "spacing": "Medium",
+      "separator": true
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Engagement Type",
+          "value": "Value 1"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Cancel",
+          "data": {
+            "command": "delete"
+          },
+          "style": "destructive",
+          "associatedInputs": "none"
+        },
+        {
+          "type": "Action.Submit",
+          "title": "Submit",
+          "data": {
+            "command": "team_remove"
+          },
+          "style": "positive",
+          "associatedInputs": "auto"
+        }
+      ],
+      "spacing": "Medium"
+    }
+  ]
+}
